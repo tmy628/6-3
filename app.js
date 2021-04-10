@@ -1,12 +1,6 @@
-// メイン部分
-var alertString;
-alertString = addString("WebCamp");
+var promptStr = prompt('何か好きな文字を入力してください。');
 
-// 作成した関数を呼び出す
-alert(alertString);
+alert(promptStr);
 
-// 作成した関数
-function addString(strA){
-  var addStr = "Hello " + strA;
-  return addStr;
-}
+// ファイルを保存し、index.htmlファイルをダブルクリックして開くと入力ダイアログが表示されるので、好きな文字を入力する
+// 入力してOKボタンをクリックすると、入力された文字列はprompt()関数の戻り値として変数「promptStr」に格納され、アラートウィンドウ上に表示される
